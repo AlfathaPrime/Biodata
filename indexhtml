@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Biodata Premium</title>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
@@ -15,7 +14,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     margin:0;
     padding:0;
     box-sizing:border-box;
-    fon[]t-family:'Poppins',sans-serif;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
@@ -23,8 +22,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:
-    linear-gradient(135deg,#0f172a,#1e293b,#312e81);
+    background:linear-gradient(135deg,#0f172a,#1e293b,#312e81);
     overflow:hidden;
     padding:20px;
 }
@@ -81,6 +79,7 @@ body::after{
     border-radius:50%;
     border:5px solid rgba(255,255,255,.3);
     object-fit:cover;
+    object-position:center;
     margin-bottom:20px;
     transition:.4s;
 }
@@ -198,6 +197,7 @@ body::after{
     }
 }
 </style>
+
 </head>
 <body>
 
@@ -205,7 +205,7 @@ body::after{
 
     <div class="left">
 
-        <img src= C:\Users\ASUS\Downloads\WhatsApp Image 2026-07-29 at 19.56.10 (1).jpeg class="profile">
+        <img src="profile.jpg" alt="Foto Profil" class="profile">
 
         <h1>Alfatha</h1>
         <p>Web Developer & Student</p>
@@ -236,12 +236,12 @@ body::after{
 
             <div class="item">
                 <div class="label">Sekolah</div>
-                <div class="value">Smpn15 yogyakarta</div>
+                <div class="value">SMP Negeri 15 Yogyakarta</div>
             </div>
 
             <div class="item">
                 <div class="label">Alamat</div>
-                <div class="value">Perum puri sakinah blok k3</div>
+                <div class="value">Perum Puri Sakinah Blok K3</div>
             </div>
 
             <div class="item">
@@ -257,9 +257,9 @@ body::after{
         </div>
 
         <div class="about">
-            saya adalah pelajar yang sangat suka mempelajari Software.
-            HTML, CSS, JavaScript,. Dulu suka coding menggunakan scratch.
-            sekarang sudah menggunakan VSCODE atau bisa disebut visual studio code
+            Saya adalah pelajar yang sangat suka mempelajari dunia software dan pemrograman.
+            Saya belajar HTML, CSS, dan JavaScript. Dulu saya belajar coding menggunakan Scratch,
+            sekarang saya menggunakan Visual Studio Code untuk membuat website dan berbagai proyek.
         </div>
 
         <div class="badges">
