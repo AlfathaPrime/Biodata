@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata Premium</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    overflow-x:hidden;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#312e81);
+}
+
+body::before,
+body::after{
+    content:"";
+    position:fixed;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:0;
+}
+
+body::before{
+    top:-100px;
+    left:-100px;
+    background:#7c3aed;
+}
+
+body::after{
+    bottom:-100px;
+    right:-100px;
+    background:#06b6d4;
+}
+
+.card{
+    position:relative;
+    z-index:1;
+    width:100%;
+    max-width:950px;
+    display:grid;
+    grid-template-columns:320px 1fr;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.4);
+    transition:.4s;
+    animation:fadeUp .8s ease;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 30px 70px rgba(0,0,0,.5);
+}
+
+.left{
+    background:rgba(255,255,255,.05);
+    padding:40px 30px;
+    text-align:center;
+    color:#fff;
+}
+
+.profile{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid rgba(255,255,255,.3);
+    box-shadow:0 0 25px rgba(56,189,248,.4);
+    transition:.4s;
+}
+
+.profile:hover{
+    transform:scale(1.05);
+}
+
+.left h1{
+    margin-top:20px;
+    font-size:30px;
+}
+
+.left p{
+    margin-top:10px;
+    color:#d1d5db;
+}
+
+.social{
+    margin-top:25px;
+}
+
+.social a{
+    color:#fff;
+    font-size:22px;
+    margin:0 10px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#38bdf8;
+}
+
+.right{
+    padding:40px;
+    color:#fff;
+}
+
+.title{
+    font-size:28px;
+    position:relative;
+    margin-bottom:30px;
+}
+
+.title::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    width:80px;
+    height:4px;
+    border-radius:20px;
+    background:#38bdf8;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.item{
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:16px;
+    padding:18px;
+    transition:.3s;
+}
+
+.item:hover{
+    transform:translateY(-5px);
+    background:rgba(255,255,255,.12);
+}
+
+.label{
+    color:#38bdf8;
+    font-size:14px;
+    margin-bottom:5px;
+}
+
+.value{
+    font-size:16px;
+    font-weight:500;
+}
+
+.about{
+    margin-top:30px;
+    background:rgba(255,255,255,.07);
+    padding:20px;
+    border-radius:16px;
+    line-height:1.8;
+}
+
+.badges{
+    margin-top:25px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.badge{
+    background:linear-gradient(135deg,#06b6d4,#3b82f6);
+    padding:8px 16px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:850px){
+
+    .card{
+        grid-template-columns:1fr;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .right,
+    .left{
+        padding:30px;
+    }
+
+    .profile{
+        width:150px;
+        height:150px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="left">
+
+        <img src="foto.jpg" alt="Foto Profil Alfatha" class="profile">
+
+        <h1>Alfatha</h1>
+        <p>Web Developer & Student</p>
+
+        <div class="social">
+            <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+
+    </div>
+
+    <div class="right">
+
+        <h2 class="title">My Biodata</h2>
+
+        <div class="grid">
+
+            <div class="item">
+                <div class="label">Nama Lengkap</div>
+                <div class="value">Alfatha</div>
+            </div>
+
+            <div class="item">
+                <div class="label">Umur</div>
+                <div class="value">12 Tahun</div>
+            </div>
+
+            <div class="item">
+                <div class="label">Sekolah</div>
+                <div class="value">SMP Negeri 15 Yogyakarta</div>
+            </div>
+
+            <div class="item">
+                <div class="label">Alamat</div>
+                <div class="value">Pleret, Banguntapan</div>
+            </div>
+
+            <div class="item">
+                <div class="label">Hobi</div>
+                <div class="value">Coding & Design</div>
+            </div>
+
+            <div class="item">
+                <div class="label">Cita-cita</div>
+                <div class="value">Software Engineer</div>
+            </div>
+
+        </div>
+
+        <div class="about">
+            Saya adalah seorang pelajar yang tertarik pada dunia teknologi,
+            pemrograman, dan desain web. Saya senang mempelajari hal baru
+            serta membuat proyek kreatif menggunakan HTML, CSS, dan JavaScript.
+        </div>
+
+        <div class="badges">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">UI Design</span>
+            <span class="badge">Web Development</span>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
